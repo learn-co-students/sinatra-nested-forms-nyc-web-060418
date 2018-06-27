@@ -1,1 +1,42 @@
-<h1>Make your form here</h1>
+<h1>Make Your New Pirate Ship!</h1>
+
+<form action="/pirates" method="post">
+
+  <p>Pirate Name: <input type="text" name="pirate[name]"></p>
+  <p>Pirate Weight: <input type="text" name="pirate[weight]"></p>
+  <p>Pirate Height: <input type="text" name="pirate[height]"></p>
+  <p>Ship Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]"></p>
+  <p>Ship Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]"></p>
+  <p>Ship Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"></p>
+  <p>Ship Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"></p>
+  <p>Ship Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]"></p>
+  <p>Ship Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></p>
+  <input type="submit" value="Submit">
+</form>
+
+<!-- <h1>Make Your New Pirate Ship!</h1>
+
+<form action="/pirates" method="post">
+
+  <p>pirate[name]: <input type="text" name="pirate[name]"></p>
+  <p>pirate[weight]: <input type="text" name="pirate[weight]"></p>
+  <p>pirate[height]: <input type="text" name="pirate[height]"></p>
+  <p>ship_name_1 <input type="text" name="pirate[ships][][name]"></p>
+  <p>ship_type_1: <input type="text" name="pirate[ships][][type]"></p>
+  <p>ship_booty_1: <input type="text" name="pirate[ships][][booty]"></p>
+  <p>ship_name_2: <input type="text" name="pirate[ships][][name]"></p>
+  <p>ship_type_2: <input type="text" name="pirate[ships][][type]"></p>
+  <p>ship_booty_2: <input type="text" name="pirate[ships][][booty]"></p>
+  <input type="submit" value="Submit">
+</form>
+
+
+fill_in("pirate[name]", :with => "Captain Jack Sparrow")
+fill_in("pirate[weight]", :with => "190 lbs")
+fill_in("pirate[height]", :with => "5 feet 11 inches")
+fill_in("ship_name_1", :with => "Flying Dutchman")
+fill_in("ship_type_1", :with => "ghost ship")
+fill_in("ship_booty_1", :with => "gold coins")
+fill_in("ship_name_2", :with => "Black Pearl")
+fill_in("ship_type_2", :with => "merchant vessel")
+fill_in("ship_booty_2" -->
