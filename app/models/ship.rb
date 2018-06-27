@@ -4,10 +4,10 @@ class Ship
 
   attr_accessor :name, :type, :booty
 
-  def initialize(name, type, booty)
-    @name = name
-    @type = type
-    @booty = booty
+  def initialize(bar)
+    @name = bar[:name]
+    @type = bar[:type]
+    @booty = bar[:booty]
     @@all_ships << self
   end
 
