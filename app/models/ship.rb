@@ -12,4 +12,8 @@ class Ship
     SHIPS
   end
 
+  def self.clear
+    all.clear  
+  end
+
 end
